@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #4ea699; /* Primary link color */
+}
+
+a:hover {
+    color: #2dd881; /* Link hover color */
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background: #1c0b19; /* Dark background */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+header .container-fluid {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    header .container-fluid {
+        padding: 0 5%;
+    }
+}
+
+header .navb-logo img {
+    width: 150px;
+    height: 100px;
+}
+
+header .navitems {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+    gap: 40px;
+}
+
+header .item {
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #4ea699; /* Text color */
+    padding: 5px 0;
+    transition: all 0.1s ease;
+    border-bottom: 0px solid transparent;
+    border-top: 0px solid transparent;
+    cursor: pointer;
+}
+
+header .item:hover {
+    border-bottom: 3px solid #2dd881; /* Border color on hover */
+    border-top: 3px solid #2dd881; /* Border color on hover */
+}
+
+header .item-button button {
+    background-color: #140d4f; /* Button background color */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff; /* Button text color */
+    transition: all 0.5s ease;
+    border: 2px solid #140d4f; /* Button border color */
+}
+
+header .item-button button:hover {
+    background-color: #2dd881; /* Button hover background color */
+    border: 2px solid #2dd881; /* Button hover border color */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navitems {
+        display: none !important;
+    }
+    #navbModal .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #navbModal .modal-content {
+        border-radius: 0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+#navbModal .modal-dialog {
+    margin: 0;
+    width: 430px;
+}
+
+@media (max-width: 375px) {
+    .modal-dialog {
+        width: 82px;
+    }
+}
+
+#navbModal .modal-content {
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background: #1c0b19; /* Modal background color */
+}
+
+#navbModal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #2dd881; /* Border color */
+}
+
+#navbModal .modal-header img {
+    width: 200px;
+    height: 125px;
+    margin-top: 17.5px;
+}
+
+#navbModal .modal-header .btn-close {
+    background: transparent;
+    opacity: 1;
+}
+
+#navbModal .modal-header i {
+    color: #6fedb7; /* Icon color */
+    font-size: 30px;
+}
+
+#navbModal .modal-header i:hover {
+    color: #2dd881; /* Icon hover color */
+    font-size: 35px;
+}
+
+#navbModal .modal-body {
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+#navbModal .modal-body .modal-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #4ea699; /* Line color */
+    border-bottom: 1px solid #4ea699; /* Line border color */
+}
+
+#navbModal .modal-body .modal-line:hover {
+    color: #2dd881; /* Hover line color */
+    border-bottom: 1px solid #2dd881; /* Hover line border color */
+    font-size: larger;
+}
+
+#navbModal .modal-line i {
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+#navbModal .nav-button {
+    width: 100%;
+    height: 47px;
+    background-color: #140d4f; /* Button background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff; /* Button text color */
+    letter-spacing: 2px;
+    transition: all .5s ease;
+    border: 2px solid transparent;
+}
+
+#navbModal .nav-button:hover {
+    background-color: #6fedb7; /* Button hover background color */
+    color: #1c0b19; /* Button hover text color */
+    font-size: larger;
+    border: 2px solid #6fedb7; /* Button hover border color */
+}
+
+#navbModal .modal-footer {
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #4ea699; /* Footer text color */
+}
+
+#navbModal .modal-footer i:hover {
+    color: #6fedb7; /* Footer icon hover color */
+    font-size: larger;
+}
+
+/* Login and Register Form */
+#LoginForm .modal-content,
+#RegisterForm .modal-content {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #140d4f; /* Form background color */
+    color: #ffffff; /* Text color */
+}
+
+#LoginForm .modal-body,
+#RegisterForm .modal-body {
+    padding: 0;
+}
+
+#LoginForm .btn-close,
+#RegisterForm .btn-close {
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    color: #2dd881; /* Close button color */
+}
+
+#LoginForm h1,
+#RegisterForm h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: #2dd881; /* Heading color */
+}
+
+#LoginForm .myform,
+#RegisterForm .myform {
+    padding: 2em;
+    max-width: 100%;
+    color: #ffffff; /* Text color */
+    background-color: #1c0b19; /* Form background color */
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+
+@media (max-width: 375px) {
+    #LoginForm .myform,
+    #RegisterForm .myform {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #LoginForm .modal-dialog,
+    #RegisterForm .modal-dialog {
+        width: 90%;
+        max-width: 375px;
+        height: auto;
+        margin: 20px auto;
+    }
+    #LoginForm .modal-content,
+    #RegisterForm .modal-content {
+        border-radius: 0.25em;
+    }
+}
+
+#LoginForm .form-control:focus,
+#RegisterForm .form-control:focus {
+    box-shadow: inset 0 -1px 0 #2dd881; /* Focus border color */
+}
+
+#LoginForm .form-control,
+#RegisterForm .form-control {
+    background-color: inherit;
+    color: #ffffff; /* Input text color */
+    padding-left: 0;
+    border: 0;
+    border-bottom: 1px solid #140d4f; /* Input border color */
+}
+
+#LoginForm .myform .btn,
+#RegisterForm .myform .btn {
+    width: 100%;
+    font-weight: 800;
+    background-color: #6fedb7; /* Button background color */
+    border-radius: 0;
+    padding: 0.5em 0;
+    color: #ffffff; /* Button text color */
+}
+
+#LoginForm .myform .btn:hover,
+#RegisterForm .myform .btn:hover {
+    background-color: #4ea699; /* Button hover background color */
+    color: #ffffff; /* Button hover text color */
+    border-color: #4ea699; /* Button hover border color */
+}
+
+#LoginForm p,
+#RegisterForm p {
+    text-align: center;
+    padding-top: 2em;
+    color: #e1e1e1; /* Paragraph text color */
+}
+
+#LoginForm p a,
+#RegisterForm p a {
+    color: #e1e1e1; /* Link color */
+    text-decoration: none;
+}
+
+#LoginForm p a:hover,
+#RegisterForm p a:hover {
+    color: #ffffff; /* Link hover color */
+}
+
+/* Content */
+.head-section {
+    background-image: linear-gradient(180deg, #4ea699, #2dd881); /* Gradient background */
+}
+
+.head-section .text-primary {
+    color: #140d4f !important; /* Primary text color */
+}
+
+.head-section .btn-primary {
+    background-color: #140d4f !important; /* Primary button background color */
+    border: none;
+}
+
+.head-section p {
+    font-size: 18px;
+}
+
+.head-section .btn-primary:hover {
+    background-color: #4ea699 !important; /* Button hover background color */
+}
+
+.head-section .blue-bg {
+    background-color: #140d4f; /* Background color */
+    color: #ffffff; /* Text color */
+}
+
+.head-section .ionicons {
+    color: #140d4f; /* Icon color */
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 12px;
+}
+
+img.img-fluid {
+    margin-bottom: -24px;
+}
