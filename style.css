@@ -1,23 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap');
 
 body {
+    background: #533747; /* Updated background color */
+    color: #FFFFFF; /* Updated text color for readability */
     font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
-    color: #4ea699; /* Primary link color */
+    color: #86BBBD; /* Updated link color */
 }
 
 a:hover {
-    color: #2dd881; /* Link hover color */
+    color: #5F506B; /* Updated link hover color */
 }
 
 header {
     width: 100vw;
     height: 100px;
-    background: #1c0b19; /* Dark background */
+    background: #533747; /* Updated header background color */
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
@@ -55,7 +59,7 @@ header .item {
     margin-inline: 15%;
     font-size: 20px;
     letter-spacing: 3px;
-    color: #4ea699; /* Text color */
+    color: #86BBBD; /* Updated text color */
     padding: 5px 0;
     transition: all 0.1s ease;
     border-bottom: 0px solid transparent;
@@ -64,12 +68,12 @@ header .item {
 }
 
 header .item:hover {
-    border-bottom: 3px solid #2dd881; /* Border color on hover */
-    border-top: 3px solid #2dd881; /* Border color on hover */
+    border-bottom: 3px solid #5F506B; /* Updated border color on hover */
+    border-top: 3px solid #5F506B; /* Updated border color on hover */
 }
 
 header .item-button button {
-    background-color: #140d4f; /* Button background color */
+    background-color: #76949F; /* Updated button background color */
     width: 150px;
     height: 50px;
     display: flex;
@@ -77,14 +81,14 @@ header .item-button button {
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff; /* Button text color */
+    color: #FFFFFF; /* Updated button text color */
     transition: all 0.5s ease;
-    border: 2px solid #140d4f; /* Button border color */
+    border: 2px solid #76949F; /* Updated button border color */
 }
 
 header .item-button button:hover {
-    background-color: #2dd881; /* Button hover background color */
-    border: 2px solid #2dd881; /* Button hover border color */
+    background-color: #5F506B; /* Updated button hover background color */
+    border: 2px solid #5F506B; /* Updated button hover border color */
 }
 
 /* Mobile responsiveness */
@@ -118,7 +122,7 @@ header .item-button button:hover {
     border-radius: 0;
     height: 100vh;
     overflow-y: scroll;
-    background: #1c0b19; /* Modal background color */
+    background: #533747; /* Updated modal background color */
 }
 
 #navbModal .modal-header {
@@ -128,7 +132,7 @@ header .item-button button:hover {
     width: 88%;
     margin: 0 auto;
     padding-bottom: 16px;
-    border-bottom: 2px solid #2dd881; /* Border color */
+    border-bottom: 2px solid #76949F; /* Updated border color */
 }
 
 #navbModal .modal-header img {
@@ -143,12 +147,12 @@ header .item-button button:hover {
 }
 
 #navbModal .modal-header i {
-    color: #6fedb7; /* Icon color */
+    color: #86BBBD; /* Updated icon color */
     font-size: 30px;
 }
 
 #navbModal .modal-header i:hover {
-    color: #2dd881; /* Icon hover color */
+    color: #5F506B; /* Updated icon hover color */
     font-size: 35px;
 }
 
@@ -168,13 +172,13 @@ header .item-button button:hover {
     margin-bottom: 50px;
     cursor: pointer;
     transition: all .5s ease;
-    color: #4ea699; /* Line color */
-    border-bottom: 1px solid #4ea699; /* Line border color */
+    color: #86BBBD; /* Updated line color */
+    border-bottom: 1px solid #86BBBD; /* Updated line border color */
 }
 
 #navbModal .modal-body .modal-line:hover {
-    color: #2dd881; /* Hover line color */
-    border-bottom: 1px solid #2dd881; /* Hover line border color */
+    color: #5F506B; /* Updated hover line color */
+    border-bottom: 1px solid #5F506B; /* Updated hover line border color */
     font-size: larger;
 }
 
@@ -189,23 +193,23 @@ header .item-button button:hover {
 #navbModal .nav-button {
     width: 100%;
     height: 47px;
-    background-color: #140d4f; /* Button background color */
+    background-color: #76949F; /* Updated button background color */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     font-weight: 700;
-    color: #ffffff; /* Button text color */
+    color: #FFFFFF; /* Updated button text color */
     letter-spacing: 2px;
     transition: all .5s ease;
     border: 2px solid transparent;
 }
 
 #navbModal .nav-button:hover {
-    background-color: #6fedb7; /* Button hover background color */
-    color: #1c0b19; /* Button hover text color */
+    background-color: #86BBBD; /* Updated button hover background color */
+    color: #533747; /* Updated button hover text color */
     font-size: larger;
-    border: 2px solid #6fedb7; /* Button hover border color */
+    border: 2px solid #86BBBD; /* Updated button hover border color */
 }
 
 #navbModal .modal-footer {
@@ -216,21 +220,23 @@ header .item-button button:hover {
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
-    color: #4ea699; /* Footer text color */
+    color: #76949F; /* Updated footer text color */
 }
 
 #navbModal .modal-footer i:hover {
-    color: #6fedb7; /* Footer icon hover color */
+    color: #86BBBD; /* Updated footer icon hover color */
     font-size: larger;
 }
+
+
 
 /* Login and Register Form */
 #LoginForm .modal-content,
 #RegisterForm .modal-content {
     width: 80%;
     margin: 0 auto;
-    background-color: #140d4f; /* Form background color */
-    color: #ffffff; /* Text color */
+    background-color: #533747; /* Updated form background color */
+    color: #FFFFFF; /* Text color */
 }
 
 #LoginForm .modal-body,
@@ -243,22 +249,22 @@ header .item-button button:hover {
     position: absolute;
     right: 0;
     padding: 1em;
-    color: #2dd881; /* Close button color */
+    color: #86BBBD; /* Updated close button color */
 }
 
 #LoginForm h1,
 #RegisterForm h1 {
     font-size: 2.3em;
     font-weight: bold;
-    color: #2dd881; /* Heading color */
+    color: #76949F; /* Updated heading color */
 }
 
 #LoginForm .myform,
 #RegisterForm .myform {
     padding: 2em;
     max-width: 100%;
-    color: #ffffff; /* Text color */
-    background-color: #1c0b19; /* Form background color */
+    color: #FFFFFF; /* Text color */
+    background-color: #6A6B83; /* Updated form background color */
     box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
 }
 
@@ -283,33 +289,33 @@ header .item-button button:hover {
 
 #LoginForm .form-control:focus,
 #RegisterForm .form-control:focus {
-    box-shadow: inset 0 -1px 0 #2dd881; /* Focus border color */
+    box-shadow: inset 0 -1px 0 #86BBBD; /* Updated focus border color */
 }
 
 #LoginForm .form-control,
 #RegisterForm .form-control {
     background-color: inherit;
-    color: #ffffff; /* Input text color */
+    color: #FFFFFF; /* Input text color */
     padding-left: 0;
     border: 0;
-    border-bottom: 1px solid #140d4f; /* Input border color */
+    border-bottom: 1px solid #76949F; /* Updated input border color */
 }
 
 #LoginForm .myform .btn,
 #RegisterForm .myform .btn {
     width: 100%;
     font-weight: 800;
-    background-color: #6fedb7; /* Button background color */
+    background-color: #86BBBD; /* Updated button background color */
     border-radius: 0;
     padding: 0.5em 0;
-    color: #ffffff; /* Button text color */
+    color: #191919; /* Button text color */
 }
 
 #LoginForm .myform .btn:hover,
 #RegisterForm .myform .btn:hover {
-    background-color: #4ea699; /* Button hover background color */
-    color: #ffffff; /* Button hover text color */
-    border-color: #4ea699; /* Button hover border color */
+    background-color: #76949F; /* Updated button hover background color */
+    color: #FFFFFF; /* Button hover text color */
+    border-color: #76949F; /* Button hover border color */
 }
 
 #LoginForm p,
@@ -327,20 +333,20 @@ header .item-button button:hover {
 
 #LoginForm p a:hover,
 #RegisterForm p a:hover {
-    color: #ffffff; /* Link hover color */
+    color: #FFFFFF; /* Link hover color */
 }
 
 /* Content */
 .head-section {
-    background-image: linear-gradient(180deg, #4ea699, #2dd881); /* Gradient background */
+    background-image: linear-gradient(180deg, #76949F, #6A6B83); /* Updated gradient background */
 }
 
 .head-section .text-primary {
-    color: #140d4f !important; /* Primary text color */
+    color: #FFFFFF !important; /* Updated primary text color */
 }
 
 .head-section .btn-primary {
-    background-color: #140d4f !important; /* Primary button background color */
+    background-color: #191919 !important; /* Updated primary button background color */
     border: none;
 }
 
@@ -349,16 +355,16 @@ header .item-button button:hover {
 }
 
 .head-section .btn-primary:hover {
-    background-color: #4ea699 !important; /* Button hover background color */
+    background-color: #86BBBD !important; /* Button hover background color */
 }
 
 .head-section .blue-bg {
-    background-color: #140d4f; /* Background color */
-    color: #ffffff; /* Text color */
+    background-color: #191919; /* Updated background color */
+    color: #FFFFFF; /* Text color */
 }
 
 .head-section .ionicons {
-    color: #140d4f; /* Icon color */
+    color: #191919; /* Icon color */
     background-color: #f2f2f2;
     padding: 10px;
     height: 30px;
@@ -369,3 +375,35 @@ header .item-button button:hover {
 img.img-fluid {
     margin-bottom: -24px;
 }
+
+/* General content styling */
+#About {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background for glass effect */
+    padding: 30px; /* Adds padding around the content */
+    border-radius: 12px; /* Smooth rounded corners */
+    color: #333; /* Text color for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+/* Text and button styling */
+.About h2 {
+    color: #191919 !important; /* Updated heading color */
+}
+
+.About p {
+    font-size: 20px;
+}
+
+.About .btn-primary {
+    background-color: #191919 !important; /* Updated button background color */
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.About .btn-primary:hover {
+    background-color: #86BBBD !important; /* Button hover color */
+}
+
+
