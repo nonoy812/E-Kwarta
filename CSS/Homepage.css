@@ -336,10 +336,44 @@ header .item-button button:hover {
     color: #FFFFFF; /* Link hover color */
 }
 
-/* Content */
+/* Intro */
 .head-section {
-    background-image: linear-gradient(180deg, #76949F, #6A6B83); /* Updated gradient background */
+    background-image: linear-gradient(180deg, #76949F, #6A6B83);
+    min-height: 60vh; /* Adjust as needed */
+    display: flex;
+    align-items: center; /* Center contents vertically */
+    overflow: hidden; /* Prevent any overflow issues */
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* Remove negative margins */
+    padding-top: 25px; /* Optional: Adjust as needed for spacing */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.col-12.col-md-6 {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: flex-start; /* Align image at the top */
+    margin-bottom: -24px;
+
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .head-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-fluid {
+        padding-top: 15px; /* Adjust for better spacing on smaller screens */
+    }
+}
+
 
 .head-section .text-primary {
     color: #FFFFFF !important; /* Updated primary text color */
@@ -372,24 +406,30 @@ header .item-button button:hover {
     margin-bottom: 12px;
 }
 
-img.img-fluid {
-    margin-bottom: -24px;
-}
 
-/* General content styling */
+/* About */
+
+.About-container{
+    min-height: 100vh; /* Adjust as needed */
+    display: flex;
+    align-items: center; /* Center contents vertically */
+    overflow: hidden; /* Prevent any overflow issues */
+}
 #About {
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background for glass effect */
-    padding: 30px; /* Adds padding around the content */
-    border-radius: 12px; /* Smooth rounded corners */
-    color: #333; /* Text color for readability */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    backdrop-filter: blur(10px); /* Apply blur effect to the background */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-image: linear-gradient(180deg, #98769f, #6A6B83);
+    padding: 30px; 
+    color: #333; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-/* Text and button styling */
+.About img{
+    width: 100%;
+    height: auto;
+}
 .About h2 {
-    color: #191919 !important; /* Updated heading color */
+    color: #191919 !important; 
 }
 
 .About p {
@@ -397,13 +437,49 @@ img.img-fluid {
 }
 
 .About .btn-primary {
-    background-color: #191919 !important; /* Updated button background color */
+    background-color: #191919 !important; 
     border: none;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease;
 }
 
 .About .btn-primary:hover {
-    background-color: #86BBBD !important; /* Button hover color */
+    background-color: #86BBBD !important;
 }
 
-
+/* faq Testimony */
+.Review{
+    background-image: linear-gradient(180deg, #198989, #836a7b);
+    min-height: 50vh; /* Adjust as needed */
+    display: flex;
+    align-items: center; /* Center contents vertically */
+    overflow: hidden; /* Prevent any overflow issues */
+    margin-top: 0%;
+}
+.testimonial-card{
+    width: 375px;
+    height: 375px;
+    padding: 15px;
+}
+.testimonial-card .card-up {
+    height: 150px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.testimonial-card img {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+.testimonial-card p {
+    word-wrap: break-word; /* Break long words */
+    word-break: break-word; /* For very long words */
+}
+.card-body {
+    overflow-wrap: break-word; /* Break long words */
+}
+.accordion{
+    width: 140vh;
+    margin-right: 35px;
+}
+  
