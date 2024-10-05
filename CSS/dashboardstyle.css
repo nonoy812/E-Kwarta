@@ -187,31 +187,31 @@
 }
 
 /* Send Form */
-#sendForm .modal-content {
+.modal .modal-content {
   width: 80%;
   margin: 0 auto;
   background-color: #533747; /* Updated form background color */
   color: #FFFFFF; /* Text color */
 }
 
-#sendForm .modal-body {
+.modal .modal-body {
   padding: 0;
 }
 
-#sendForm .btn-close {
+.modal .btn-close {
   position: absolute;
   right: 0;
   padding: 1em;
   color: #86BBBD; /* Updated close button color */
 }
 
-#sendForm h1 {
+.modal h1 {
   font-size: 2.3em;
   font-weight: bold;
   color: #76949F; /* Updated heading color */
 }
 
-#sendForm .myform {
+.modal .myform {
   padding: 2em;
   max-width: 100%;
   color: #FFFFFF; /* Text color */
@@ -220,26 +220,26 @@
 }
 
 @media (max-width: 375px) {
-  #sendForm .myform {
+  .modal .myform {
       max-width: 100%;
       margin: 0 auto;
   }
-  #sendForm .modal-dialog {
+  .modal .modal-dialog {
       width: 90%;
       max-width: 375px;
       height: auto;
       margin: 20px auto;
   }
-  #sendForm .modal-content {
+  .modal .modal-content {
       border-radius: 0.25em;
   }
 }
 
-#sendForm .form-control:focus {
+.modal .form-control:focus {
   box-shadow: inset 0 -1px 0 #86BBBD; /* Updated focus border color */
 }
 
-#sendForm .form-control {
+.modal .form-control {
   background-color: inherit;
   color: #FFFFFF; /* Input text color */
   padding-left: 0;
@@ -247,7 +247,7 @@
   border-bottom: 1px solid #76949F; /* Updated input border color */
 }
 
-#sendForm .myform .btn {
+.modal .myform .btn {
   width: 100%;
   font-weight: 800;
   background-color: #86BBBD; /* Updated button background color */
@@ -256,24 +256,24 @@
   color: #191919; /* Button text color */
 }
 
-#sendForm .myform .btn:hover {
+.modal .myform .btn:hover {
   background-color: #76949F; /* Updated button hover background color */
   color: #FFFFFF; /* Button hover text color */
   border-color: #76949F; /* Button hover border color */
 }
 
-#sendForm p {
+.modal p {
   text-align: center;
   padding-top: 2em;
   color: #e1e1e1; /* Paragraph text color */
 }
 
-#sendForm p a {
+.modal p a {
   color: #e1e1e1; /* Link color */
   text-decoration: none;
 }
 
-#sendForm p a:hover {
+.modal p a:hover {
   color: #FFFFFF; /* Link hover color */
 }
 
@@ -291,10 +291,82 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: transparent; /* Match with form background color */
   color: #aaaaaa; /* Light gray placeholder color */
   border: none;
-  border-bottom: 1px solid #76949F; /* Same as input border */
+  border-bottom: 1.5px solid #76949F; /* Same as input border */
   padding: 0.5em 1em;
 }
 
 .form-control {
   padding-left: 0.5em; /* Add some padding to input */
+}
+
+/* Recharge style */
+#bpiFields .card {
+  max-width: 500px;
+  margin: auto;
+  color: black;
+  border-radius: 20 px;
+}
+
+#bpiFields p {
+  margin: 0px;
+}
+
+#bpiFields .container .h8 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+#bpiFields .btn.btn-primary {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+  border: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+
+}
+
+
+#bpiFields .btn.btn.btn-primary:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+#bpiFields .btn.btn-primary:hover .fas.fa-arrow-right {
+  transform: translate(15px);
+  transition: transform 0.2s ease-in;
+}
+
+#bpiFields .form-control {
+  color: white;
+  background-color: #223C60;
+  border: 2px solid transparent;
+  height: 60px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+#bpiFields .form-control:focus {
+  color: white;
+  background-color: #0C4160;
+  border: 2px solid #2d4dda;
+  box-shadow: none;
+}
+
+#bpiFields .text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#bpiFields ::placeholder {
+  font-size: 14px;
+  font-weight: 600;
 }
