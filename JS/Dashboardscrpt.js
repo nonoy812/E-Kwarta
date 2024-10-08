@@ -33,3 +33,21 @@ function toggleBankFields() {
     }
 }
 //BANK
+
+//Load Script
+// Select all telecom provider images
+const telecoms = document.querySelectorAll('.telecom');
+
+// Add click event listener to each telecom logo
+telecoms.forEach(telecom => {
+    telecom.addEventListener('click', () => {
+        // Remove 'selected' class from all telecom logos
+        telecoms.forEach(t => t.classList.remove('selected'));
+        
+        // Add 'selected' class to the clicked logo
+        telecom.classList.add('selected');
+        
+        // Optionally, you can handle other logic here (e.g., store the selected provider)
+        console.log(`Selected provider: ${telecom.dataset.provider}`);
+    });
+});

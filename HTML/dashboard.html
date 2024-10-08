@@ -70,7 +70,8 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                         <div class="myform bg-dark">
                             <h1 class="text-center">Recharge</h1>
                             <form>
@@ -190,6 +191,21 @@
             </div>
         </div>
 
+        <!--Loan Modal-->
+        <div class="modal fade" id="notAvailableModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">Service Not Available</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We're sorry, but this service is currently not available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Dashboard-->
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
@@ -240,29 +256,29 @@
                             </button>
                         </div>
                         <div class="col-3 mx-2 d-flex justify-content-center">
-                            <button class="btn btn-danger">
+                            <button class="btn btn-danger" onclick="window.location.href='TopUp.html'">
                                 <i class="fa-solid fa-gamepad icon-lg"></i>Top-Up
                             </button>
                         </div>
                     </div>
                     <div class="row px-2 justify-content-center">
                         <div class="col-3 mx-2 d-flex justify-content-center">
-                            <button class="btn btn-primary">
+                            <button class="btn btn-primary" onclick="window.location.href='Bills.html'">
                                 <i class="fa-solid fa-school icon-lg"></i>Pay Bills
                             </button>
                         </div>
                         <div class="col-3 mx-2 d-flex justify-content-center">
-                            <button class="btn btn-secondary">
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#notAvailableModal">
                                 <i class="fa-solid fa-envelope-open-text icon-lg"></i>Loan
                             </button>
                         </div>
                         <div class="col-3 mx-2 d-flex justify-content-center">
-                            <button class="btn btn-success">
+                            <button class="btn btn-success" onclick="window.location.href='Load.html'">
                                 <i class="fa-solid fa-mobile-alt icon-lg"></i>Load
                             </button>
                         </div>
                         <div class="col-3 mx-2 d-flex justify-content-center">
-                            <button class="btn btn-danger">
+                            <button class="btn btn-danger" onclick="window.location.href='Donate.html'">
                                 <i class="fa-solid fa-heart icon-lg"></i>Donate
                             </button>
                         </div>
