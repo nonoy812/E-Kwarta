@@ -21,7 +21,8 @@
             <div class="list-group list-group-flush my-3">
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                         class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="Profile.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="Profile.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-user me-2"></i>Profile</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
@@ -213,12 +214,32 @@
                     <i class="fas fa-align-left primary-text navbar-icon" id="menu-toggle"></i>
                     <h2 class="fs-2 fw-bold" style="margin-left: 20px;">Dashboard</h2>
                 </div>
-                <div class="ml-auto ms-auto d-flex align-items-center text-end nav-icon">
-                    <i class="fas fa-bell primary-text navbar-icon me-3" id="notification-icon" title="Notifications"></i>
-                    <i class="fas fa-user-circle primary-text navbar-icon" id="profile-icon" title="Profile"></i>
+                <div class="ml-auto d-flex align-items-center text-end nav-icon">
+                    <!-- Notification Icon with Badge -->
+                    <div class="position-relative" id="notification-container">
+                        <a href="javascript:void(0);" class="text-body mx-5" id="notification-icon">
+                            <i class="fas fa-bell fa-2x"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger toggle-badge d-none" id="notification-badge">9</span>
+                        </a>
+                        <div class="notification-dropdown" id="notification-dropdown">
+                            <div class="notification-item">Notification 1</div>
+                            <div class="notification-item">Notification 2</div>
+                            <div class="notification-item">Notification 3</div>
+                            <!-- Add more notifications as needed -->
+                        </div>
+                    </div>
+                    <!-- Toggle Switch -->
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault">kwaa lang ni ang switch kung may way na mag show ang numbers if may notif</label>
+                    </div>
                 </div>
             </nav>
             
+
+
+
+
 
 
             <div class="container-fluid px-4">
@@ -226,17 +247,20 @@
                 <div class="row px-2 justify-content-center">
                     <div class="balance row g-3 my-2">
                         <div class="col-md-4">
-                            <div
-                                class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                                <div class="">
+                            <div class="d-flex justify-content-start align-items-center mb-3">
+                                <i class="fas fa-user fs-2 me-2" aria-hidden="true"></i> <!-- Font Awesome icon -->
+                                <h1 class="fs-2 user-name">John Doe</h1> <!-- Placeholder for user name -->
+                            </div>
+                            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                                <div>
                                     <h3 class="fs-2">₱720</h3>
-                                    <p class="fs-5">Balance</p>
+                                    <p class="fs-5 text-muted">Balance</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <!--Buttons-->
                 <div class="Buttons row g-3 my-2">
                     <div class="row px-2 justify-content-center">
@@ -268,7 +292,8 @@
                             </button>
                         </div>
                         <div class="col-3 mx-2 d-flex justify-content-center">
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#notAvailableModal">
+                            <button class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#notAvailableModal">
                                 <i class="fa-solid fa-envelope-open-text icon-lg"></i>Loan
                             </button>
                         </div>

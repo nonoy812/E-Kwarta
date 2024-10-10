@@ -111,17 +111,7 @@
   flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
-/* Adjust margin for the notification and profile icons */
-.nav-icon {
-  margin-left: auto; /* Align icons to the right */
-  display: flex;
-  align-items: center;
-}
 
-/* Add space between icons */
-.nav-icon .navbar-icon {
-  margin-left: 15px; /* Add space between icons */
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -370,3 +360,65 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 14px;
   font-weight: 600;
 }
+
+/*notif*/
+.toggle-badge {
+  position: absolute;
+  top: -10px; /* Adjusted to position the badge above the mail icon */
+  right: 40px; /* Adjusted based on your layout */
+  background-color: red; /* Badge background color */
+  color: white; /* Badge text color */
+  border-radius: 50%; /* Make it circular */
+  padding: 5px 8px; /* Padding for the badge */
+  font-size: 12px; /* Font size for the badge */
+  font-weight: bold; /* Bold text for visibility */
+}
+
+.notification-dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 40px; /* Position it below the icon */
+  right: 0; /* Align it with the icon */
+  background-color: white; /* Background color for the dropdown */
+  border: 1px solid #ccc; /* Border for the dropdown */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  z-index: 1000; /* Ensures it appears above other elements */
+}
+
+.notification-item {
+  padding: 10px 15px; /* Padding for items */
+  border-bottom: 1px solid #eee; /* Divider between items */
+  color: black; /* Text color */
+}
+
+.notification-item:last-child {
+  border-bottom: none; /* Remove last border */
+}
+
+.notification-item:hover {
+  background-color: #f0f0f0; /* Highlight effect on hover */
+}
+
+.d-none {
+  display: none; /* Class to hide elements */
+}
+
+/*dugang2*/
+.user-name {
+  color: #333; /* Dark color for contrast */
+  font-weight: bold; /* Make the name stand out */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.user-name:hover {
+  .fs-2{
+    transform: scale(10); /* Slightly grow on hover */
+  }
+  
+}
+
+.fs-2 {
+  margin-bottom: 0; /* Remove margin to align better with the icon */
+}
+
